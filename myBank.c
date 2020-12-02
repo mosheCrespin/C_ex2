@@ -11,7 +11,7 @@ void O(double deposit){
     while(matrix_2d[j][1]==1){j++;}
     matrix_2d[j][0]=deposit;
     matrix_2d[j][1]=1;
-    printf( "New account number is: %d\n", (STARTER+j) );
+    printf( "New account number is: %d \n", (STARTER+j) );
     i++;
 }
 void B(int account_number){
@@ -29,9 +29,10 @@ void D (int account_number,double deposit){
 void W(int account_number,double withdrawal){
     if(matrix_2d[account_number-STARTER][0]>=withdrawal){
         matrix_2d[account_number-STARTER][0]-=withdrawal;
+        printf("The new balance is: %.2lf\n" , matrix_2d[account_number-STARTER][0]);
     }
-    else printf("There is not enough balance\n");
-    printf("The new balance is: %.2lf\n" , matrix_2d[account_number-STARTER][0]);
+    else printf("Cannot withdraw more than the balance\n");
+
 }
 void C(int account_number){
      matrix_2d[account_number-STARTER][1]=0;

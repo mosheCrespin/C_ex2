@@ -7,7 +7,7 @@ int main()
     int flag=FALSE;
     while (flag==FALSE)
     {
-    printf("\nPlease choose a transaction type: \n O-Open Account\n B-Balance Inquiry\n D-Deposit\n W-Withdrawal\n C-Close Account\n I-Interest\n P-Print\n E-Exit\n");
+    printf("\nPlease choose a transaction type:\n O-Open Account\n B-Balance Inquiry\n D-Deposit\n W-Withdrawal\n C-Close Account\n I-Interest\n P-Print\n E-Exit\n");
     char input;
     scanf(" %c" ,&input);
     switch (input)
