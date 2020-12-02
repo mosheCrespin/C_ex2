@@ -6,7 +6,7 @@
 #define END 950
 double matrix_2d [ACCOUNTS][SITUATIONS]={0};
 int i=0;
-void O(double deposit){//this function is to open a new acount.
+void O(double deposit){//this function is to open a new acount
     int j=0;
     while(matrix_2d[j][1]==1)//run until find acount that is close.
     {j++;}

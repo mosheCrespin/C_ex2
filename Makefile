@@ -4,6 +4,7 @@ AR=ar
 HEADER=myBank.h
 .PHONY: all clean 
 all: mains 
+
 myBank.o:myBank.c $(HEADER)
 	$(CC) $(FLAGS) -c myBank.c
 main.o: main.c $(HEADER)

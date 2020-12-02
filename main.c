@@ -13,7 +13,7 @@ int main()
     scanf(" %c" ,&input);
     switch (input)
     {
-    case 'O':{//if the input is o get in.
+    case 'O':{//if the input is O get in.
         double deposit;
         double q;
         q=getNumberOfOpenAccounts();
