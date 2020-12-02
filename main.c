@@ -113,13 +113,14 @@ int main()
         printf("Please enter account number: ");
         if(scanf(" %d",&account_number))
         {
-          if(isInRange(account_number))//check if account number is in range
+          if(isInRange(account_number)){//check if account number is in range
             if(isopen(account_number)){//check if the account is open
              C(account_number);
              printf("Closed account number %d\n", account_number);
              
           }
-            	else printf("This account is already closed\n");	
+            	else printf("This account is already closed\n");
+            	}	
           }
         else{
         printf("Failed to read the account number\n");
@@ -141,7 +142,6 @@ int main()
           break;
     }
       case 'P':{
-        if(getNumberOfOpenAccounts>0)
            P();
            break;
     }

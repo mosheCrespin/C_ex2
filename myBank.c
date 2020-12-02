@@ -46,9 +46,11 @@ void I(int interest){
 }
 void P(){
     int j=0;
+    if(i>0){
     for(j=0; j<ACCOUNTS;j++){
         if(matrix_2d[j][1]==1)
             printf("The balance of account number %d is: %.2lf\n" , (STARTER+j), matrix_2d[j][0]);
+    }
     }
 }
 void E(){
